@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            flex-direction: column;
+            background-color: rgb(227, 225, 251);
+            gap: 30px;
+            box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+            padding: 30px 30px;
+            position: relative;
+        }
+        .main{
+            height: 210px;
+        }
+        /* .main:hover{
+            scale: 1.1;
+            transition-duration: 0.3s;
+        } */
+        .txt{
+            text-align: center;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            color: rgb(235, 42, 103);
+            gap: 5px;
+            position: absolute;
+            left: 0px;
+            top: 20px;
+            opacity: 0;
+            transition: 1s;
+        }
+        .icons{
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 20px;
+        }
+        .icons:hover{
+            color: rgb(204, 52, 103);
+        }
+        .button{
+            width: 80px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin:auto;
+            margin-top: 10px;
+        }
+        .box > :nth-child(1){
+            border: 1px solid rgb(208, 83, 104);
+            width: 30px;
+            padding: 5px 5px;
+            display: flex;
+            justify-content: center;
+            border-radius: 3px;
+        }
+        .box > :nth-child(2) {
+            border: 1px solid rgb(210, 80, 102);
+            width: 30px;
+            padding: 5px 5px;
+            display: flex;
+            justify-content: center;
+            border-radius: 3px;
+        }
+
+        .container:hover>div:nth-child(1){
+            opacity: 1;
+            transform: translateX(20px);
+        }
+        .container:hover>img:nth-child(2){
+            scale: 1.2;
+            transition-duration: 1s;
+        }
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-share"></i>
+    </div>
+
+        <img src="./shoes3.png" class="main">
+
+        <h1 class="txt">NIKE</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p class="txt">$100.99</p>
+        <div class="icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <input placeholder="Add To Cart" class="button">
+    </div>
+    
+</body>
+</html>
